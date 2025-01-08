@@ -1,17 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap');
 
 body {
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    color: #103939;
     position: relative;
     height: 100%;
     min-height: 100vh;
     background-image: url(./assets/images_accueil/background.png);
-    background-size: cover; /* Ou utilisez contain, selon le besoin */
-  background-repeat: no-repeat;
-  background-attachment: fixed; /* Fixe l'image pour qu'elle couvre toute la page */
-  background-position: center;
-  overflow-x: hidden;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-position: center;
+    overflow-x: hidden;
 }
 .sidebar {
     position: fixed;
@@ -29,45 +35,34 @@ body {
 
 }
 
-ul {
-    list-style-type: none;
-    width: 100%;
-    margin-left: 20px;
-    
-}
-
 .liensidebar{
 
     writing-mode: vertical-lr;
-    text-orientation: mixed;
-    font-size: 1.2rem;
+    transform: rotate(180deg);
+    text-orientation:unset;
+    font-family: "Bebas Neue", serif;
+    font-size: 2rem;
     font-weight: bold;
     text-decoration: none;
-    color: #000;
+    color: #feeefe;
     margin: 20px 0;
     transition: color 0.3s ease;
-    writing-mode: vertical-lr;
-    text-orientation:mixed;
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: #000;
-    margin: 20px 0;
-   
-   
+    
   }
 
 .liensidebar:hover{
-    color: #f39c12;
+    color: #103939;
   }
+
 .navbar{
    
     display: flex;
     justify-content: center;
     align-items: center; 
     height: 90px;  
-    
-   
+    background-color: #feeefe;
+    position: fixed;
+    width: 100%;
 }
 
 
@@ -86,18 +81,58 @@ ul {
     padding: 0; 
 }
 
+/* FOOTER */
+
 .footer{
-display: flex;
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+  padding: 20px;
   flex-wrap: wrap;
-  max-width: 1000px;
+  width: 100%;
   margin: 0 auto;
-  font-size: 13px;
+  font-size: 15px;
+  gap: 20px;
 
 }
-.footercolonne{
-    flex: 1 1 200px;
-    margin: 10px;
-    
 
+.footercolonne{
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1100px;
+    width: 100%;
+    gap: 20px;
+
+  }
+
+  .footer-item {
+    flex: 1 1 250px;
+    margin: 10px;
+}
+
+ul {
+    list-style-type: none;
+    font-weight: bold;
+    font-family: "Bebas Neue"; 
+    list-style-type: none;
+    width: 100%;
+    margin-left: 20px;        
+  }
+
+
+p {
+    margin: 5px 0 15px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #555;
+}
+
+  .copyright {
+    font-size: 0.8rem;
+    color: #aaa;
+    text-align: center;
+    margin-top: auto;
+    padding-top: 10px;
   }

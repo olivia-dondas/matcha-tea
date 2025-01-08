@@ -1,15 +1,31 @@
+
+body {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    position: relative;
+    height: 100%;
+    min-height: 100vh;
+    background-image: url(./assets/images_accueil/background.png);
+    background-size: cover; /* Ou utilisez contain, selon le besoin */
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Fixe l'image pour qu'elle couvre toute la page */
+  background-position: center;
+  overflow-x: hidden;
+}
 .sidebar {
     position: fixed;
     left: 0;
     top: 0;
     width: 80px;
     height: 100vh;
-    background-color: #f5d3e1; 
+    background-color: #d2636c;
     display: flex;
-    flex-direction:column-reverse;
-    justify-content:space-around;
+    flex-direction: column-reverse;
+    justify-content: space-around;
     align-items: center;
     z-index: 10;
+    overflow: hidden; /* Empêche les débordements internes */
 
 }
 
@@ -37,11 +53,51 @@ ul {
     text-decoration: none;
     color: #000;
     margin: 20px 0;
-    transition: color 0.3s ease;
-    transform: rotate(180deg); 
+   
    
   }
 
 .liensidebar:hover{
     color: #f39c12;
+  }
+.navbar{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 90px;  
+    
+   
+}
+
+
+.logo img{
+    margin-left: 80px;
+    height: 150px; 
+    width: auto; 
+    
+}
+.video{
+    
+    display: block;
+    width: 100vw; 
+    height: 50%; 
+    margin: 0; 
+    padding: 0; 
+}
+
+.footer{
+display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 13px;
+
+}
+.footercolonne{
+    flex: 1 1 200px;
+    margin: 10px;
+    
+
   }

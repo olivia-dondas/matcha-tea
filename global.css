@@ -7,7 +7,6 @@
   --text-light: #aaa;
   --text-dark: #555;
 
-  font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -39,7 +38,7 @@ body {
   background-color: var(--accent-color);
   display: flex;
   flex-direction: column-reverse;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   z-index: 10;
   overflow: hidden; 
@@ -76,7 +75,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; 
-  height: 90px;  
+  height: 150px;  
   background-color: var(--secondary-color);
   position: fixed;
   width: 100%;
@@ -84,8 +83,9 @@ body {
 
 .logo img {
   margin-left: 80px;
-  height: 150px; 
+  height: 200px; 
   width: auto; 
+  padding-top: 20px;
 }
 
 /* FOOTER */

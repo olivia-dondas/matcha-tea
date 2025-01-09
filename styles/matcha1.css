@@ -1,2 +1,11 @@
 /*INDEX*/
 @import url("../global.css");
+
+.video{
+    
+    display: block;
+    width: 100vw; 
+    height: 50%; 
+    margin: 0; 
+    padding: 0; 
+}

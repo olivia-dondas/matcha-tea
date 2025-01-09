@@ -42,7 +42,7 @@ body {
   justify-content: space-around;
   align-items: center;
   z-index: 10;
-  overflow: hidden; /* Empêche les débordements internes */
+  overflow: hidden; 
 }
 
 .liensidebar {
@@ -91,38 +91,33 @@ body {
 /* FOOTER */
 .footer-container {
     display: flex;
-    justify-content: space-between; /* Répartit l'espace entre les sections */
-    align-items: flex-start; /* Aligne les sections verticalement en haut */
-    gap: 20px;
-    flex-wrap: wrap; /* Permet aux éléments de se réorganiser sur plusieurs lignes */
-    max-width: 100%; /* Permet d'utiliser toute la largeur */
+    justify-content: space-between; 
+    align-items: flex-start; 
+    gap: 14%;
+    flex-wrap: wrap; 
+    max-width: 80%; 
     margin: 0 auto;
-    padding-top: 20px; /* Ajoute de l'espace au-dessus */
-    box-sizing: border-box; /* Assure que le padding n'affecte pas la largeur */
+    padding-top: 50px; 
+    box-sizing: border-box; 
+    margin-left: 270px;
   }
   
   .footer-container section {
-    flex: 1 1 300px; /* Les sections auront une largeur flexible, minimum 300px */
+   
     max-width: 300px;
   }
   
   .footer-container .map iframe {
-    width: 100%;
-    height: auto;
-    max-height: 300px; /* Limite la hauteur de la carte */
+    max-height: 300px; 
     border: none;
-  }
-  .plandusite {
-    margin-left: 100px; /* Décale la section pour qu'elle ne soit pas cachée derrière la sidebar */
     
   }
   
+  
   /* SECTION SAV (Services) */
   .sav {
-    flex: 1 1 300px; /* Même comportement que pour la carte */
-    max-width: 300px;
-    padding: 20px;
-    box-sizing: border-box;
+    flex: 1 1 300px; 
+   
   }
   
   .sav h2 {
@@ -131,7 +126,12 @@ body {
     color: var(--primary-color);
     margin-bottom: 10px;
   }
-  
+  .plandusite h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+  }
   .sav ul {
     list-style-type: none;
     padding: 0;
@@ -172,17 +172,17 @@ body {
     color: var(--secondary-color);
   }
   
-  /* Rendre le footer responsive */
+  /* Fesponsive du footer */
   @media (max-width: 768px) {
     .footer-container {
-      flex-direction: column; /* Empile les sections sous forme de colonne sur les petits écrans */
-      align-items: center; /* Centre les sections */
+      flex-direction: column; 
+      align-items: center; 
       padding-top: 40px;
     }
   
     .footer-container section {
       max-width: 100%;
-      margin-bottom: 20px; /* Ajoute de l'espace entre les sections */
+      margin-bottom: 20px; 
     }
   }
   
@@ -208,4 +208,5 @@ p {
   text-align: center;
   margin-top: auto;
   padding-top: 10px;
+  margin-left: 35px;
 }

@@ -5,12 +5,16 @@
 .navbar{
     z-index: 1000;
 }
+.sidebar{
+    z-index: 3000;
+}
 .team-photos {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
+    margin-left: 100px;
 }
 
 .team-member {

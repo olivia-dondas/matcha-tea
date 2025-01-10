@@ -11,6 +11,7 @@
     flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
+    margin-left: 100px;
 }
 
 .team-member {

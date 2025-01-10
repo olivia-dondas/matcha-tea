@@ -1,3 +1,60 @@
 /* À PROPOS */
 
 @import url("../global.css");
+
+.navbar{
+    z-index: 1000;
+}
+.team-photos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.team-member {
+    background-color: rgba(239, 229, 238, 0.877);;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: scale(1.05); /* Effet de zoom lors du survol */
+}
+
+.member-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Pour rendre les photos rondes */
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+    color: rgb(222, 120, 120);
+}
+
+.team-member p {
+    font-size: 1rem;
+    color:rgb(0, 0, 0)
+}
+.team-description {
+    background-color:rgb(235, 230, 240);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    margin-left: 100px;
+    margin-top: 120px;
+}
+
+.team-description h2 {
+    font-size: 2rem;
+    color: rgb(222, 120, 120);
+}

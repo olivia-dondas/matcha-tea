@@ -96,3 +96,64 @@ span img {
 .container_head a {
     color: hsl(0, 11%, 31%);
 }
+@media (max-width: 768px) {
+    .introduction {
+        margin-top: 150px;
+        margin-left: 35px;
+        max-width: 90%;
+      
+    }
+
+    .container_head h2 {
+        font-size: 1.5em; 
+    }
+
+    .container_head_G {
+        width: 100%;
+        flex-direction: row; 
+        justify-content: space-between;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+   
+    .imgG {
+        width: 45%; 
+        height: auto; 
+        margin-bottom: 10px;
+    }
+
+    .textG {
+        width: 50%; 
+        text-align: left;
+    }
+
+    .textG p {
+        font-size: 1em; 
+    }
+
+    span img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .container_head a {
+        font-size: 0.9em; 
+    }
+
+    
+    .sidebar {
+        width: 7%;
+       
+    }
+
+    .main-content {
+        width: 100%; 
+        padding: 0 10px; 
+    }
+
+   
+    .container_head_G {
+        flex-direction: column;
+    }
+}

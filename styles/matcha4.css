@@ -1,25 +1,89 @@
 /* CONTACT */
 @import url("../global.css");
 
-/* Formulaire de contact */
-.conteneur-contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 100%;
-  padding: 20px;
-  background-color: var(--primary-color);
-  border: none;
- 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 0 auto; /* Centrer horizontalement */
-  min-height: 100vh; /* Prendre toute la hauteur de la fenêtre */
-  padding-top: 100px; /* Ajouter un espace suffisant pour ne pas être caché sous le header */
-  box-sizing: border-box; /* Inclure le padding dans le calcul de la hauteur */
+* {
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
-.conteneur-contact h3 {
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%; /* Assurer que le body prend toute la largeur de la page */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+header {
+  position: relative;
+  z-index: 10; /* Le header reste au-dessus du contenu */
+}
+
+/* Container principal */
+.conteneur-contact {
+  display: flex;
+  justify-content: space-between; /* Pour séparer les deux éléments */
+  align-items: flex-start; /* Alignement en haut pour les éléments */
+  padding: 50px 80px; /* Ajuste l'espace autour */
+  min-height: 100vh; /* Pour que la section occupe toute la hauteur */
+  background-color: #ead4d4db;
+  padding-top: 120px;
+}
+
+.illustration {
+  flex: 1; /* L'illustration prendra 1 part de l'espace */
+  margin-right: 60px; /* Espace entre l'illustration et le formulaire */
+}
+
+.illustration img {
+  max-width: 100%; /* Limiter la taille de l'illustration */
+  height: auto;
+}
+
+/* Formulaire */
+.formulaire {
+  flex: 1; /* Prend l'espace disponible à droite */
+  background-color: var(--primary-color); /* Pour donner un fond blanc au formulaire */
+  padding: 20px;
+  margin-top: 120px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  min-width: 300px;
+  max-width: 500px;
+}
+/* Autres styles pour le formulaire (les groupes de champs et boutons) */
+.groupe-champ {
+  margin-bottom: 15px;
+}
+
+
+.groupe-champ label {
+  font-size: 1rem;
+}
+
+
+.groupe-champ input,
+.groupe-champ select,
+.groupe-champ textarea {
+  width: 90%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid var(--text-light);
+  border-radius: 5px;
+}
+
+
+
+
+.formulaire h3 {
   font-size: 2rem;
   color: var(--secondary-color);
   text-align: center;
@@ -39,25 +103,6 @@
   margin-bottom: 5px;
 }
 
-.groupe-champ input,
-.groupe-champ select,
-.groupe-champ textarea {
-  width: 100%;
-  padding: 10px;
-  font-size: 1rem;
-  border: 1px solid var(--text-light);
-  border-radius: 5px;
-  background-color: #fff;
-  color: var(--text-dark);
-  transition: border-color 0.3s ease;
-}
-
-.groupe-champ input:focus,
-.groupe-champ select:focus,
-.groupe-champ textarea:focus {
-  border-color: var(--accent-color);
-  outline: none;
-}
 
 /* Section des actions */
 .actions-formulaire {

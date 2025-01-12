@@ -260,3 +260,37 @@ p {
   padding-top: 10px;
   margin-left: 35px;
 }
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column; 
+    align-items: center; 
+    padding-top: 40px;
+    max-width: 100%; 
+    margin-left: 0; 
+    gap: 10%; 
+  }
+
+  .footer-container section {
+    max-width: 100%; 
+    margin-bottom: 20px; 
+    text-align: center; 
+  }
+
+  .sav ul li,
+  .plandusite ul li {
+    font-size: 0.9rem; 
+  }
+
+  .footer-container .map iframe {
+    max-width: 100%; 
+  }
+}
+
+.copyright {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  text-align: center;
+  margin-top: auto;
+  padding-top: 10px;
+  width: 100%;
+}

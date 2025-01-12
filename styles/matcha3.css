@@ -1,6 +1,4 @@
-/* HISTOIRE */
 @import url("../global.css");
-@import url("../globals.css");
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap');
 
 :root {
@@ -9,10 +7,9 @@
     --accent-color: #d2636c;
     --text-light: #aaa;
     --text-dark: #555;
-  
-  }
-  
+}
 
+/* Conteneur principal */
 .container_head {
     width: 100%;
     display: flex;
@@ -21,12 +18,9 @@
     flex-wrap: wrap;
     padding: 0px;
     overflow: hidden;
-    /* gap: 120px; */
 }
 
-
-
-
+/* Section introduction */
 .introduction {
     display: flex;
     max-width: 60%;
@@ -34,19 +28,16 @@
     margin-bottom: 50px;
     align-items: center;
     text-align: center;
-    color: var(--primary-color) ;
-   
+    color: var(--primary-color);
 }
 
 .container_head h2 {
-    display: flex;
     justify-content: center;
     margin: 20px;
     padding: 0px;
 }
 
-
-
+/* Conteneur avec image et texte */
 .container_head_G {
     width: 80%;
     display: flex;
@@ -58,12 +49,15 @@
     border-radius: 15px;
     overflow: hidden;
     margin-bottom: 20px;
+    min-height: 300px; 
+    padding: 20px; 
 }
 
+/* Gestion des images */
 .imgG {
     width: 400px;
     height: 300px;
-
+    overflow: hidden;
     display: flex;
     align-items: center;
     border-radius: inherit;
@@ -71,22 +65,39 @@
 
 .imgG img {
     width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 15px; 
 }
 
+/* Section texte */
 .textG {
-    width: 60%;
-    justify-content: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; 
+    max-width: 60%;
     text-align: left;
-    
+    padding: 20px; 
+}
+
+.textG h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em; 
+    color: var(--primary-color);
 }
 
 .textG p {
-    padding: 0px;
-    text-align: center;
+    margin: 15px 0; 
+    line-height: 1.8;
+    font-size: 1.1em;
 }
 
-
-
+.textG ul li {
+    margin-bottom: 12px;
+    padding-left: 15px; 
+    list-style-type: disc; 
+}
 
 span img {
     height: 50px;
@@ -96,40 +107,40 @@ span img {
 .container_head a {
     color: hsl(0, 11%, 31%);
 }
+
+/* RESPONSIVE */
 @media (max-width: 768px) {
     .introduction {
         margin-top: 150px;
         margin-left: 35px;
         max-width: 90%;
-      
     }
 
     .container_head h2 {
-        font-size: 1.5em; 
+        font-size: 1.5em;
     }
 
     .container_head_G {
         width: 100%;
-        flex-direction: row; 
-        justify-content: space-between;
-        margin-bottom: 10px;
-        padding: 10px;
+        flex-direction: column; 
+        text-align: center; 
+        align-items: center;
     }
 
-   
     .imgG {
-        width: 45%; 
+        width: 100%; 
         height: auto; 
         margin-bottom: 10px;
     }
 
     .textG {
-        width: 50%; 
-        text-align: left;
+        width: 90%; 
+        padding: 10px; 
+        text-align: center; 
     }
 
     .textG p {
-        font-size: 1em; 
+        font-size: 1em;
     }
 
     span img {
@@ -138,22 +149,6 @@ span img {
     }
 
     .container_head a {
-        font-size: 0.9em; 
-    }
-
-    
-    .sidebar {
-        width: 7%;
-       
-    }
-
-    .main-content {
-        width: 100%; 
-        padding: 0 10px; 
-    }
-
-   
-    .container_head_G {
-        flex-direction: column;
+        font-size: 0.9em;
     }
 }
